@@ -2,14 +2,17 @@ import React from "react"
 
 class List extends React.Component {
     render(){
-        // this.props.title
+        function mapIt(input){
+            return input.map(item =>{
+                return <p>{item}</p>
+            })
+        }
         return(
         <div>
-            <h1>Listen</h1>
+            <h1>Job List</h1>
             <p>{this.props.title}</p>
-            {this.props.fruit.map(item => {
-                return <p>{item}</p>
-            })}
+            {mapIt(this.props.fruit)}
+            {mapIt(this.props.jobs)}
         </div>
         )
     }
