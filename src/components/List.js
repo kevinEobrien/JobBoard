@@ -1,4 +1,5 @@
 import React from "react"
+import Card from "./Card"
 
 class List extends React.Component {
     render(){
@@ -13,6 +14,7 @@ class List extends React.Component {
             <p>{this.props.title}</p>
             {mapIt(this.props.fruit)}
             {mapIt(this.props.jobs)}
+            <Card/>
         </div>
         )
     }
