@@ -11,7 +11,6 @@ class List extends React.Component {
         }
         return (
             <div>
-                <h1>Job List</h1>
                 <Card />
             </div>
         )

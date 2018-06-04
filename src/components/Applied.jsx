@@ -1,14 +1,11 @@
 import React from "react"
+import List from "./List"
 
-class Applied extends React.Component {
-    render() {
-        return (
-            <div className="categories">
-                <p>Applied</p>
-
-            </div>
-        )
-    }
-}
+const Applied = () => (
+    <div className="categories">
+        <p>Applied</p>
+        <List />
+    </div>
+)
 
 export default Applied

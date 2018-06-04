@@ -31,7 +31,7 @@
   font-size: large;
 }
 aside{
-  background-color: teal;
+  background-color: dimgray;
   border:solid 1px;
   min-height: 100vh;
 }
@@ -44,4 +44,10 @@ aside{
   border:solid 1px;
   min-height: 100vh;  
   background-color: blue;
+}
+.card{
+  border: solid 1px;
+  border-radius: 8px;
+  margin: 1px;
+  background-color: white;
 }
