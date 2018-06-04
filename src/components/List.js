@@ -3,6 +3,7 @@ import Card from "./Card"
 
 class List extends React.Component {
     render(){
+        let jobs= [{company: "", title: "", location: "", salary: "", postURL: "", deadline: "", applied: "", interview1:"", interview2: "", offer: "", notes: ""}]
         function mapIt(input){
             return input.map(item =>{
                 return <p>{item}</p>
