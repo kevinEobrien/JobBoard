@@ -3,7 +3,7 @@ import List from "./List"
 
 const Applied = () => (
     <div className="categories">
-        <p>Applied</p>
+        <h2>Applied</h2>
         <List />
     </div>
 )

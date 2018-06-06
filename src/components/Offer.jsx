@@ -2,7 +2,7 @@ import React from "react"
 
 const Offer = () => (
     <div className="categories">
-        <p>Offer</p>
+        <h2>Offer</h2>
     </div>
 )
 

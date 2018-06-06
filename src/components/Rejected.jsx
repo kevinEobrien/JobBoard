@@ -2,7 +2,7 @@ import React from "react"
 
 const Rejected = () => (
     <div className="categories">
-        <p>Rejected</p>
+        <h2>Rejected</h2>
     </div>
 )
 
