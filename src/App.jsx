@@ -1,28 +1,27 @@
 import React, { Component } from "react";
-import breifcase from "./breifcase.png"
+import breifcase from "./breifcase.png";
 import "./App.css";
-import List from "./components/List"
-import Wishlist from "./components/Wishlist"
-import Applied from "./components/Applied"
-import Interview from "./components/Interview"
-import Offer from "./components/Offer"
-import Rejected from "./components/Rejected"
+import List from "./components/List";
+import Board from "./components/Board";
 
 class App extends Component {
+
   render() {
+    const title = ["Wish List", "Applied", "Interview",
+      "Offer", "Rejected"];
+    const BoardCards = title.map((title, ind) => (
+      <Board title={title}
+        job={jobs.filter(status === "applied")} />
+    ))
     return (
-      <div className="App">
+      <div className="App" >
         <header className="App-header">
           <img src={breifcase} className="App-logo" alt="logo" />
           <h1 className="App-title">Welcome To Your Job Journey</h1>
         </header>
         <div className="App-body">
           <aside></aside>
-          <Wishlist />
-          <Applied />
-          <Interview />
-          <Offer />
-          <Rejected />
+          {BoardCards}
         </div>
       </div>
     );
